@@ -307,7 +307,7 @@ if (this.registerForm.value.vac == '2' && this.registerForm.value.vac_details ==
           imageWidth: 150,
           imageHeight: 150,
 
-          imageUrl:'assets/assets/images/newlogobig.jpeg',
+          imageUrl:'assets/assets/images/newlogosmall.jpeg',
 
           showCancelButton: true,
           confirmButtonColor: '#3085d6',

@@ -35,9 +35,7 @@
           <h4 class="modal-title" id="modal-basic-title">ລົງທະບຽນສຳເລັດ</h4>
           <ul class="List list-group-items">
             <li>ຊື່ ແລະ ນາມສະກຸນ: {{ show_name }}&nbsp;{{ show_lastname }}</li>
-
-            <li>Vaccination ID: {{ show_cvin_ref }}</li>
-
+            <li>Vaccination ID(ເລກບັດຂຽວ): {{ show_cvin_ref }}</li>
             <li>ສະຖານທີ່: {{ show_location }}</li>
             <li>ນັດຮັບວັກຊີນ: {{ show_dtg | date:'dd/MM/yyy'}}</li>
             <li>ສັນຊາດ: {{ show_nation }}{{ show_nationInter }}</li>
@@ -49,7 +47,7 @@
         <ngx-qrcode [elementType]="elementType" [value]="value" cssClass="aclass">
         </ngx-qrcode>
         <h6>{{ value }}</h6>
-        <h5>ກະລຸນາຖ່າຍຮູບໄວ້</h5>
+        <h5>ກະລຸນາຖ່າຍຮູບໄວ້ ເພື່ອຢັ້ງຢືນກັບເຈົ້າໜ້າທີ່</h5>
       </div>
       <button type="button" class="btn btn-outline-dark" (click)="reload()">
         ຕົກລົງ/Ok

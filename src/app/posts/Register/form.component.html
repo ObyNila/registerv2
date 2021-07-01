@@ -80,7 +80,7 @@
 <!-- Loading -->
 <ng-template #loading let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">ກະລຸນາລໍຖ້າ</h4>
+    <h4 class="modal-title" id="modal-basic-title">ກະລຸນາລໍຖ້າ / Please wait</h4>
   </div>
   <div class="modal-body">
     <div class="container">
@@ -525,7 +525,7 @@
               <!-- <h5 class="sub-title">ອາຊີບ</h5> -->
               <select [ngClass]="{ 'is-invalid': submitted && f.job.errors }" name="job" class="form-control"
                 formControlName="job">
-                <option value="" disabled selected hidden>ເລືອກອາຊີບ</option>
+                <option value="" disabled selected hidden>ເລືອກຂະແໜງການ</option>
                 <option [value]="job.job_id" *ngFor="let job of jobList">
                   {{ job.job_name }}
                 </option>
